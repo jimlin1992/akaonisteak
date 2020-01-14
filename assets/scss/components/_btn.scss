@@ -1,0 +1,32 @@
+.btn:link,.btn:visited,input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;    
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    -webkit-transition: background-color .2s, border 0.2s, color 0.2s;
+    transition: background-color .2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link, .btn-full:visited{
+    @extend .btn;
+    background-color: $color-btn;
+    border: 1px solid $color-btn;
+    margin-right: 15px;
+}
+.btn-full:hover, .btn-full:active,input[type=submit]{
+    background-color: $color-btn-darker;
+}
+
+
+.btn-ghost:link, .btn-ghost:visited{
+    @extend .btn;
+    border: 1px solid $color-btn;
+    color:$color-btn;
+}
+
+.btn-ghost:hover, .btn-ghost:active{
+    background-color: $color-btn-darker;
+    color: white;
+}

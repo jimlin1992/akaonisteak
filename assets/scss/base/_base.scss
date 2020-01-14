@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    &:focus{
+        outline: none;
+    }
+}
+
+html, body{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+// clear the float
+.clearfix {zoom:1}
+
+.clearfix:after {
+    content: '.';
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.section-meals{
+    padding: 0;
+}
+
+.header-font{
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+}
+
+.feature-box{
+    padding: 1px;
+}
+
+h2{
+    @extend .header-font;
+    font-size: 180%;
+    word-spacing:2px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+
+    &:after{
+        display: block;
+        height: 2px;
+        background-color: $color-btn;
+        content: "";
+        width: 100px;
+        margin: 0 auto;
+        margin-top:30px; 
+    }
+}
+
+h3{
+    @extend .header-font;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+a:link,
+a:visited{
+    color:$color-btn;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid $color-btn;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active{
+    color:#555;
+    border-bottom: 1px solid transparent;
+}
+
+%small-icon{
+    display: inline-block;
+    color:$color-btn;
+    margin-right: 15px;
+    line-height: 120%;
+    vertical-align: middle;
+    width: 15px;
+}
